@@ -17,20 +17,23 @@ JS| `babel-loader`
 
 ## Quick Start
 
-**get codes**
+### get codes
+```shell
+$ git clone https://github.com/SeojinSeojin/webpack-boilerplate
+```
 
-`git clone https://github.com/SeojinSeojin/webpack-boilerplate`
+### install node packages
+```shell
+$ npm i
+$ npm i --save-dev babel-loader css-loader html-webpack-plugin sass sass-loader style-loader webpack webpack-cli webpack-dev-server
+```
 
-**install node packages**
+### run development server
+```shell
+$ npx webpack serve
+```
 
-`npm i`
-
-`npm i --save-dev babel-loader css-loader html-webpack-plugin sass sass-loader style-loader webpack webpack-cli webpack-dev-server`
-
-**run development server**
-
-`npx webpack serve`
-
-**build**
-
-`npm run build`
+### build
+```
+npm run build
+```
