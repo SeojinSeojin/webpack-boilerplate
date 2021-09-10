@@ -1,14 +1,6 @@
-$shadow-light : rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+$shadow-light : rgba(50, 50, 93, 0.3) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 $color-indigo-50 : #EEF2FF;
 $color-indigo-100 : #E0E7FF;
-$color-indigo-200 : #C7D2FE;
-$color-indigo-300 : #A5B4FC;
-$color-indigo-400 : #818CF8;
-$color-indigo-500 : #6366F1;
-$color-indigo-600 : #4F46E5;
-$color-indigo-700 : #4338CA;
-$color-indigo-800 : #3730A3;
-$color-indigo-900 : #312E81;
 
 div#app {
 	font-size: 25px;
@@ -31,4 +23,10 @@ h1 {
     line-height: 2rem;
     font-weight: 600;
     text-align: center;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    height: 60px;
 }

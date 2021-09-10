@@ -21,11 +21,16 @@ module.exports = {
             {
                 test: /\.s[ac]ss$/i,
                 use: [
-                  "style-loader",
-                  "css-loader",
-                  "sass-loader",
-                ],
-                exclude: /node_modules/,
+                    'raw-loader',
+                    {
+                        loader:'sass-loader',
+                        options: { 
+                            sassOptions:{
+                                includePaths: [path.resolve(__dirname, 'node_modules')]
+                            }
+                        }
+                    }
+                ]   
             },
             {
                 test: /\.m?js$/,
@@ -36,7 +41,15 @@ module.exports = {
                         plugins: ['@babel/plugin-proposal-class-properties']
                     }
                 }
-            }
+            },
+            {
+                test: /\.hbs$/,
+                loader: 'handlebars-loader'
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'file-loader',
+            },
         ]
     },
     devtool: 'source-map',
