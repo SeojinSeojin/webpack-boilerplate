@@ -44,7 +44,10 @@ Assets | `file-loader`
 │   │   └── initialize.scss
 │   └── 📁 templates // 템플릿 파일들
 │       └── index.hbs
-└── webpack.config.js
+├── webpack.config.js
+├── .eslintrc.json
+├── .gitignore
+└── .prettierrc.json
 ```
 
 ## Quick Start

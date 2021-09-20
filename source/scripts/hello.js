@@ -1,3 +1,3 @@
-const hello = () => console.log("hello webpack spa!");
+const hello = () => console.log('hello webpack spa!');
 
-export default hello
+export default hello;
